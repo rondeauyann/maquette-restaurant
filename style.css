@@ -1,0 +1,166 @@
+/********************** Fichier SCSS Main **********************/
+/*
+	- Document: Fichier style
+	- Version: 1.0.0
+	- Author: Andreani Quentin 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+.accueil {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(burger.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.accueil .titre {
+  height: 100vh;
+}
+.accueil h1 {
+  color: white;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: light;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+.accueil p {
+  color: white;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: light;
+  line-height: 2em;
+}
+
+.navbar {
+  color: white !important;
+}
+.navbar a {
+  color: white !important;
+}
+.navbar .navbar-toggler-icon {
+  color: white !important;
+}
+
+.navbar-default {
+  background: black !important;
+  transition: background-color 1s linear;
+}
+
+.our, .menu, .signature {
+  background: #962323;
+}
+.our img, .menu img, .signature img {
+  width: auto;
+  height: 300px;
+}
+.our h2, .menu h2, .signature h2 {
+  color: white;
+  font-family: "Dancing Script";
+  font-weight: 600;
+  font-style: semi-bold;
+  font-size: 3em;
+  position: relative;
+}
+.our h2:hover, .menu h2:hover, .signature h2:hover {
+  text-decoration: none !important;
+}
+.our h2::after, .menu h2::after, .signature h2::after {
+  content: "";
+  transform-origin: center;
+  transform: scaleX(0.2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.03em;
+  background: white;
+  z-index: 2;
+  transition: transform 0.3s;
+}
+.our h2:hover::after, .menu h2:hover::after, .signature h2:hover::after {
+  transform: scaleX(1);
+}
+.our p, .menu p, .signature p {
+  color: white;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: light;
+}
+
+.signature {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(paralax.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.menu {
+  background: white;
+}
+.menu h2 {
+  color: black;
+}
+.menu h2:after {
+  background: black;
+}
+.menu h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.menu p {
+  color: black;
+  font-size: 0.9em;
+}
+
+.images {
+  height: 50vh;
+}
+
+.img1 {
+  background: url(img1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img2 {
+  background: url(img2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img3 {
+  background: url(img3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact {
+  background: #25262a;
+  color: white;
+  font-size: 0.9em;
+}
+.contact a {
+  color: white;
+}
+.contact a:hover {
+  color: white;
+}
+
+footer {
+  background-color: #16171b;
+  color: grey;
+}
+footer a {
+  color: grey;
+}
+footer a:hover {
+  color: grey;
+}
+footer i {
+  transition: transform 1s;
+}
+footer i:hover {
+  transform: scale(1.5);
+}
+
+/*# sourceMappingURL=style.css.map */
